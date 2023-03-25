@@ -1,9 +1,9 @@
 # Name: Kayden Hung
 # Date: 3/25/2023
-# Objectives: First Project
-#	Recieve two ints from user
-#	Operate on ints using add, sub, mul, and div
-#	Tell whether the two ints are equal or not
+# Objectives: 	First Project
+#		Recieve two ints from user
+#		Operate on ints using add, sub, mul, and div
+#		Tell whether the two ints are equal or not
 #
 # Github: https://github.com/KaydenDaKat/AssemblySamples/blob/main/project1.asm
 
