@@ -1,0 +1,34 @@
+
+
+# Print given a string literal
+.macro print(%string)
+li $v0, 4
+
+.data
+word: .asciiz %string
+
+.text
+la $a0, word
+syscall
+
+.end_macro
+
+
+.text
+main: 
+	print("hello")
+	
+	li $v0, 5
+	syscall
+	move $s0, $v0
+	
+	beq $s0, 1, grade
+	beq $s0, 2, exit
+	
+grade: 
+	print("hello")
+	j exit
+	
+exit: 
+	li $v0, 10
+	syscall

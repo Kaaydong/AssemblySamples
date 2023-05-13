@@ -1,10 +1,10 @@
 # Name: Kayden Hung
 # Date: 3/25/2023
-# Objectives: 	First Project
-#		Recieve two ints from user
-#		Operate on ints using add, sub, mul, and div
-#		Tell whether the two ints are equal or not
-#
+# Objectives: 	-First Project
+#		-Recieve two ints from user
+#		-Operate on ints using add, sub, mul, and div
+#		-Tell whether the two ints are equal or not
+#		-Error Handling
 # Github: https://github.com/KaydenDaKat/AssemblySamples/blob/main/project1.asm
 
 .data
@@ -29,9 +29,9 @@ main:
 	syscall
 	
 	li $v0, 5	# Ask for int 1
-	syscall
+	syscall		
 	move $s0, $v0
-	
+
 	li $v0, 4	# Print num2
 	la $a0, num2
 	syscall
